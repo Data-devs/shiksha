@@ -1,0 +1,2 @@
+
+# Getting all university links : name.xpath('//*[@class="font-15"]/@href').extract()
