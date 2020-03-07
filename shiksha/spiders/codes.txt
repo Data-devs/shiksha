@@ -1,2 +1,13 @@
 
 # Getting all university links : name.xpath('//*[@class="font-15"]/@href').extract()
+#Getting all university name : name.xpath('//*[@class="font-15"]/strong').extract()
+
+
+print("\n")
+            print(university_name , ' ::: ', university_link)
+            print('\n')
+
+
+
+
+
