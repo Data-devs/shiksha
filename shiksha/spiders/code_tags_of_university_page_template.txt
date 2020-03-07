@@ -1,0 +1,41 @@
+
+# university  name :response.xpath('//*[@class="H1-sc-1225uyb-0 KmIux"]/text()').extract()
+
+# university description :  response.xpath('//*[@class="Styled__WikiWidget-sc-1yl1nt-83 jniITB wiki"]/p/text()').extract()
+
+
+// in order to grab all courses link -> make custom selector
+
+   custom selector      :  courses = response.xpath('//*[@class="Styled__WidgetContent-opouq6-2 iJqtXa"] ')
+   get all courses name :  courses.xpath('.//*[@class="Styled__CourseTag-sc-1r3eix0-0 cuhzRO"]/text() ').extract()
+
+
+
+// all courses in university page (e.g: https://studyabroad.shiksha.com/canada/universities/university-of-alberta/courses)
+    # getting all courses name( as button) : response.xpath('//*[@class="Styled__CourseTag-sc-1r3eix0-0 cuhzRO"]/text() ').extract()
+    # getting all courses full name : response.xpath('//*[@class="Styled__AllCourseTuple-sc-1yl1nt-33 kHvhnS"]/a/text() ').extract()
+    # getting all courses page link : response.xpath('//*[@class="Styled__AllCourseTuple-sc-1yl1nt-33 kHvhnS"]/a/@href ').extract()
+    # get course heading : response.xpath('//*[@class="Styled__WidgetHeading-opouq6-1 bSjtKj"]/text() ').extract_first()
+
+     // about course table in page
+        # table heading : response.xpath('//*[@class="Styled__TableStyle-sc-10ucg51-0 lfnXDf"]/thead/tr/th/text() ').extract_first()
+        # table cell data : response.xpath('//*[@class="Styled__TableStyle-sc-10ucg51-0 lfnXDf"]/tbody/tr/td/text() ').extract()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

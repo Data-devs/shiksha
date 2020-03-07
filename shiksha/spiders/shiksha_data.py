@@ -9,20 +9,12 @@ class ShikshaDataSpider(scrapy.Spider):
 
     def parse(self, response):
 
-
-
-
         #main link
         #name = response.xpath('//*[@class="font-18 number-bg"]') #custom selector
-
-
         university_link = response.xpath('//*[@class="font-15"]/@href').extract()
         university_name = response.xpath('//*[@class="font-15"]/strong/text()').extract()
 
-
         # mysql connection
-
-
 
         # for uname in university_name:
         #     print(uname)
