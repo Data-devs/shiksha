@@ -1,13 +1,29 @@
 
 # university  name :response.xpath('//*[@class="H1-sc-1225uyb-0 KmIux"]/text()').extract()
 
-# university description :  response.xpath('//*[@class="Styled__WikiWidget-sc-1yl1nt-83 jniITB wiki"]/p/text()').extract()
+#
 
 
 // in order to grab all courses link -> make custom selector
 
    custom selector      :  courses = response.xpath('//*[@class="Styled__WidgetContent-opouq6-2 iJqtXa"] ')
    get all courses name :  courses.xpath('.//*[@class="Styled__CourseTag-sc-1r3eix0-0 cuhzRO"]/text() ').extract()
+
+
+
+// university at glance (table)
+   table :  response.xpath('//*[@class="Styled__TableStyle-sc-10ucg51-0 hfBVJr"]/tbody/tr/td/text() ').extract()
+
+// university rank (QS ranking)
+    rank : response.xpath('//*[@class="Styled__RankingDetailBox-sc-132amsi-12 efmkzO" ]/p/strong/text() ').extract()
+    rank name : response.xpath('//*[@class="Styled__RankingDetailBox-sc-132amsi-12 efmkzO"]/label/text() ').extract()
+
+
+
+
+
+
+
 
 
 
@@ -20,6 +36,11 @@
      // about course table in page
         # table heading : response.xpath('//*[@class="Styled__TableStyle-sc-10ucg51-0 lfnXDf"]/thead/tr/th/text() ').extract_first()
         # table cell data : response.xpath('//*[@class="Styled__TableStyle-sc-10ucg51-0 lfnXDf"]/tbody/tr/td/text() ').extract()
+
+
+
+
+
 
 
 

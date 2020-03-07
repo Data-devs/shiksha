@@ -9,11 +9,18 @@ mydb = mysql.connector.connect(
 )
 
 print(mysql)
+uname = 'university_name'
 mycursor = mydb.cursor()
-sql = "insert into university_info(name) value (%s) "
-val = ['heool']
-mycursor.execute(sql, val)
+
+mycursor.execute("desc university_page_data ")
+university_page_link = mycursor.fetchall()
+for i in university_page_link:
+
+    if i[0] == uname:
+        print(' found : ')
+
+
+#print("university link ::::::::::::::  ", university_page_link)
+
 
 mydb.commit()
-
-print("1 record inserted, ID:", mycursor.lastrowid)
