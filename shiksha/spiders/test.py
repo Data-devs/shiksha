@@ -1,9 +1,20 @@
-hello = ['999 ',' 666 ']
 
-k = []
+size = 3
+con = 3
+a = str(1)
+for i in range(size):
 
-for i in hello:
-    j = i.replace(' ','')
-    k.append(j)
+    print('size ',i+1)
 
-print(k)
+    for x in range(3):
+
+
+
+
+        print('a value : ',a)
+        a = int(a)
+        a +=1
+
+    print('-------------------')
+    print()
+

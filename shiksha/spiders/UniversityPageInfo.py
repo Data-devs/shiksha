@@ -12,7 +12,7 @@ class UniversityPageInfo(scrapy.Spider):
 
         def start_requests(self):
             mycursor = mydb.cursor()
-            mycursor.execute("select link from university_info where id = 169 ")
+            mycursor.execute("select link from university_info where id = 53 ")
             university_page_link = mycursor.fetchall()
             for i in university_page_link:
                 #print('unversity: ', i[0])

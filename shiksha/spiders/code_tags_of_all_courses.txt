@@ -1,0 +1,15 @@
+# Main div
+    main_div = response.xpath(' (//div[@class="Styled__AllCourseTuple-sc-1yl1nt-33 kHvhnS"])[1] ')
+
+#single div (1st course in list)
+    course_name = main_div.xpath(' (//*[@class="Styled__LinkStyle-sc-19aj422-2 jRTEUB"])[1]/text() ').extract()
+    course_page =  main_div.xpath('( //*[@class="Styled__LinkStyle-sc-19aj422-2 jRTEUB"]) [1]/@href ').extract()
+      #course details
+        course_duration = main_div.xpath('(//*[@class="Styled__AllCourseDetail-sc-1yl1nt-38 gpZxNg"]) [1]/p/text() ').extract()
+        course_fee = main_div.xpath('(//*[@class="Styled__AllCourseDetail-sc-1yl1nt-38 gpZxNg"]) [2]/p/text() ').extract()
+        course_ielts = main_div.xpath('(//*[@class="Styled__AllCourseDetail-sc-1yl1nt-38 gpZxNg"]) [3]/p/text() ').extract()
+
+
+
+   ................
+  
