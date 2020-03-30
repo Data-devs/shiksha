@@ -1,0 +1,14 @@
+# about this course -> table
+about_course = response.xpath('(//*[@class="Styled__TableStyle-sc-10ucg51-0 lfnXDf"]) [1]/tbody/tr/td/text() ').extract()
+
+    #Course Description
+    response.xpath('//*[@class="Styled__CourseDescription-sc-14wej5r-0 Gtoss"]/div/ul/li/text()').extract()
+
+
+# fees & expense -> table
+     response.xpath('//*[@class="Styled__TableStyle-sc-10ucg51-0 vXiFr"]/tbody/tr/td/text() ').extract()
+     response.xpath('//*[@class="Styled__TableStyle-sc-10ucg51-0 vXiFr"]/tbody/tr/td/strong/text() ').extract()   
+
+
+
+
