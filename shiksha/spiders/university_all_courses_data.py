@@ -97,10 +97,10 @@ class UniversityCoursesData(scrapy.Spider):
             print('Couse iel : ', course_ielts)
             print('University id >>>>>> ', university_id)
 
-            mycursor = mydb.cursor()
-            sql = ("insert into university_courses (university_id,name,link,duration,1year_fees,exams) values (%s,%s,%s,%s,%s,%s)")
-            val = [university_id,course_name,course_page,course_duration,course_fee,course_ielts]
-            mycursor.execute(sql, val)
+            # mycursor = mydb.cursor()
+            # sql = ("insert into university_courses (university_id,name,link,duration,1year_fees,exams) values (%s,%s,%s,%s,%s,%s)")
+            # val = [university_id,course_name,course_page,course_duration,course_fee,course_ielts]
+            # mycursor.execute(sql, val)
 
 
 
@@ -109,22 +109,6 @@ class UniversityCoursesData(scrapy.Spider):
 
 
         university_id += 1
-
-
-        #University location table data
-        # location_table = response.xpath('//*[@class="Styled__TableStyle-sc-10ucg51-0 ihMXxO"]/tbody/tr/td/text() ').extract()
-        # location_table_wiki = response.xpath('//*[@class="Styled__AnchorStyle-sc-19aj422-1 bKWZUV"]/@href ').extract()
-        #
-        # city = location_table[1]
-        # size_of_city = location_table[3]
-        # population = location_table[5]
-        # wiki = location_table_wiki
-        #
-        # print('city : ',city)
-        # print('size : ',size_of_city)
-        # print('pop : ',population)
-        # print('wiki: ',wiki)
-
 
 
 
